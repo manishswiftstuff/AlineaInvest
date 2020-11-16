@@ -56,7 +56,7 @@ class CategoryTableViewCell: UITableViewCell {
         separator.leadingAnchor == self.leadingAnchor + 20
         separator.trailingAnchor == self.trailingAnchor - 20
         separator.heightAnchor == 1
-        separator.backgroundColor = UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1)
+        separator.backgroundColor = UIColor.borderColor
     }
 
     func setUpData(color: UIColor, imageName: String, title: String) {

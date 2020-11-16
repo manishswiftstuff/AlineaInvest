@@ -44,7 +44,7 @@ private extension CategoryViewController {
         categoryTableView.trailingAnchor == self.view.trailingAnchor
         categoryTableView.topAnchor == self.view.topAnchor
         categoryTableView.bottomAnchor == self.view.bottomAnchor
-        categoryTableView.backgroundColor = UIColor(red: 250/255, green: 251/255, blue: 252/255, alpha: 1)
+        categoryTableView.backgroundColor = UIColor.viewBackgroundColor
         categoryTableView.separatorStyle = .none
         categoryTableView.register(CategoryTableViewCell.self, forCellReuseIdentifier: "categoryCell")
     }

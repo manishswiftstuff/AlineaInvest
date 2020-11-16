@@ -24,8 +24,8 @@ class ThemesCollectionViewCell: UICollectionViewCell {
     private func configureView() {
         self.layer.cornerRadius = 5
         self.layer.borderWidth = 1
-        self.backgroundColor = UIColor(red: 250/255, green: 251/255, blue: 252/255, alpha: 1)
-        self.layer.borderColor = UIColor(red: 246/255, green: 247/255, blue: 252/255, alpha: 1).cgColor
+        self.backgroundColor = UIColor.viewBackgroundColor
+        self.layer.borderColor = UIColor.borderColor.cgColor
         
         self.addSubview(themeImageView)
         themeImageView.centerXAnchor == self.centerXAnchor
