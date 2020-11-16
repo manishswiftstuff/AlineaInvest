@@ -2,28 +2,37 @@
 //  ExploreViewController.swift
 //  AlineaInvest
 //
-//  Created by Silverlabs on 16/11/20.
+//  Created by Manish Kumar on 16/11/20.
 //
 
 import UIKit
+import XLPagerTabStrip
 
-class ExploreViewController: UIViewController {
+class ExploreViewController: ButtonBarPagerTabStripViewController {
 
     override func viewDidLoad() {
+        setPagerSettings()
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override public func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
+        let trendingVC = TrendingViewController()
+        let themesVC = ThemesViewController()
+        let categoryVC = CategoryViewController()
+        return [categoryVC, themesVC, trendingVC]
     }
-    */
+}
 
+private extension ExploreViewController {
+    func setPagerSettings() {
+        settings.style.selectedBarHeight = 2
+        settings.style.buttonBarBackgroundColor = .white
+        settings.style.buttonBarItemBackgroundColor = .clear
+        settings.style.buttonBarMinimumLineSpacing = 10
+        settings.style.selectedBarBackgroundColor = UIColor.purple
+        settings.style.buttonBarItemTitleColor = UIColor.purple
+        settings.style.buttonBarItemFont = UIFont.systemFont(ofSize: 14)
+        settings.style.buttonBarItemsShouldFillAvailableWidth = true
+    }
+    
 }

@@ -13,6 +13,9 @@
 		5619720A2562C16400CD5EFE /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561972092562C16400CD5EFE /* TabBarViewController.swift */; };
 		561972422562C76B00CD5EFE /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561972412562C76B00CD5EFE /* ExploreViewController.swift */; };
 		561972452562C78000CD5EFE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561972442562C78000CD5EFE /* HomeViewController.swift */; };
+		561972482562CB1500CD5EFE /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561972472562CB1500CD5EFE /* CategoryViewController.swift */; };
+		5619724B2562CB3400CD5EFE /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5619724A2562CB3400CD5EFE /* ThemesViewController.swift */; };
+		5619724E2562CB6200CD5EFE /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5619724D2562CB6200CD5EFE /* TrendingViewController.swift */; };
 		9FFB6E1F1FFFBD143211570E /* Pods_AlineaInvest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E36FBD09B59558BCC400D52 /* Pods_AlineaInvest.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +29,9 @@
 		561972092562C16400CD5EFE /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		561972412562C76B00CD5EFE /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		561972442562C78000CD5EFE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		561972472562CB1500CD5EFE /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		5619724A2562CB3400CD5EFE /* ThemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
+		5619724D2562CB6200CD5EFE /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
 		C691270DE134E2E6EFD5ADE3 /* Pods-AlineaInvest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlineaInvest.release.xcconfig"; path = "Target Support Files/Pods-AlineaInvest/Pods-AlineaInvest.release.xcconfig"; sourceTree = "<group>"; };
 		D0DF105C59E1BB5A24425F7E /* Pods-AlineaInvest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlineaInvest.debug.xcconfig"; path = "Target Support Files/Pods-AlineaInvest/Pods-AlineaInvest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -265,6 +271,7 @@
 		561972212562C2D200CD5EFE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				561972472562CB1500CD5EFE /* CategoryViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -300,6 +307,7 @@
 		561972262562C30800CD5EFE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5619724A2562CB3400CD5EFE /* ThemesViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -335,6 +343,7 @@
 		5619722B2562C34800CD5EFE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5619724D2562CB6200CD5EFE /* TrendingViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -460,9 +469,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5619724E2562CB6200CD5EFE /* TrendingViewController.swift in Sources */,
+				561972482562CB1500CD5EFE /* CategoryViewController.swift in Sources */,
 				5619720A2562C16400CD5EFE /* TabBarViewController.swift in Sources */,
 				561971F02562C06E00CD5EFE /* AppDelegate.swift in Sources */,
 				561972422562C76B00CD5EFE /* ExploreViewController.swift in Sources */,
+				5619724B2562CB3400CD5EFE /* ThemesViewController.swift in Sources */,
 				561972452562C78000CD5EFE /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
