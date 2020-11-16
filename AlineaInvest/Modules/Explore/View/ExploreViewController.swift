@@ -6,33 +6,30 @@
 //
 
 import UIKit
-import XLPagerTabStrip
+import Anchorage
 
-class ExploreViewController: ButtonBarPagerTabStripViewController {
+class ExploreViewController: UIViewController {
+    let topView = UIView()
+    let pagerVC = PagerViewController()
 
     override func viewDidLoad() {
-        setPagerSettings()
         super.viewDidLoad()
-    }
-    
-    override public func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
-        let trendingVC = TrendingViewController()
-        let themesVC = ThemesViewController()
-        let categoryVC = CategoryViewController()
-        return [categoryVC, themesVC, trendingVC]
+        self.view.backgroundColor = .white
+        setUI()
     }
 }
 
 private extension ExploreViewController {
-    func setPagerSettings() {
-        settings.style.selectedBarHeight = 2
-        settings.style.buttonBarBackgroundColor = .white
-        settings.style.buttonBarItemBackgroundColor = .clear
-        settings.style.buttonBarMinimumLineSpacing = 10
-        settings.style.selectedBarBackgroundColor = UIColor.purple
-        settings.style.buttonBarItemTitleColor = UIColor.purple
-        settings.style.buttonBarItemFont = UIFont.systemFont(ofSize: 14)
-        settings.style.buttonBarItemsShouldFillAvailableWidth = true
+    func setUI() {
+        self.view.addSubview(topView)
+        topView.topAnchor == self.view.safeAreaLayoutGuide.topAnchor 
+        topView.leadingAnchor == self.view.leadingAnchor
+        topView.trailingAnchor == self.view.trailingAnchor
+        topView.bottomAnchor == self.view.bottomAnchor + 20
+        
+        pagerVC.view.frame = topView.bounds
+        topView.addSubview(pagerVC.view)
+        self.addChild(pagerVC)
+        pagerVC.didMove(toParent: self)
     }
-    
 }

@@ -20,6 +20,6 @@ class HomeViewController: UIViewController {
         let gotoExploreLabel = UILabel()
         self.view.addSubview(gotoExploreLabel)
         gotoExploreLabel.centerAnchors == self.view.centerAnchors
-        gotoExploreLabel.text = "Go to explore tab"
+        gotoExploreLabel.text = "Tap on explore tab"
     }
 }

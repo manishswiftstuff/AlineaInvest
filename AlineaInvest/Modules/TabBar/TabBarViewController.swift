@@ -28,14 +28,14 @@ private extension TabBarViewController {
     
     func setHomeTab() {
         let item = HomeViewController()
-        let icon = UITabBarItem(title: "Home", image: UIImage(named: "ic_home"), tag: 0)
+        let icon = UITabBarItem(title: nil, image: UIImage(named: "ic_home"), tag: 0)
         item.tabBarItem = icon
         controllers.append(item)
     }
     
     func setExploreTab() {
         let item = ExploreViewController()
-        let icon = UITabBarItem(title: "Explore", image: UIImage(named: "ic_explore"), tag: 0)
+        let icon = UITabBarItem(title: nil, image: UIImage(named: "ic_explore"), tag: 0)
         item.tabBarItem = icon
         controllers.append(item)
     }
