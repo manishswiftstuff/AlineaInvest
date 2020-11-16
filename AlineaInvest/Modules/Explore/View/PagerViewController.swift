@@ -12,8 +12,6 @@ import Anchorage
 class PagerViewController: ButtonBarPagerTabStripViewController {
 
     override func viewDidLoad() {
-        self.edgesForExtendedLayout = UIRectEdge()
-
         settings.style.selectedBarHeight = 2
         settings.style.buttonBarBackgroundColor = .white
         settings.style.buttonBarItemBackgroundColor = .clear
@@ -23,9 +21,6 @@ class PagerViewController: ButtonBarPagerTabStripViewController {
         settings.style.buttonBarItemFont = UIFont.systemFont(ofSize: 14)
         settings.style.buttonBarItemsShouldFillAvailableWidth = true
         super.viewDidLoad()
-        self.view.insertSubview(UIView(), at: 0)
-        self.containerView.contentInsetAdjustmentBehavior = .never
-        self.containerView.contentInset = .zero
     }
     
     override public func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {

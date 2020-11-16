@@ -9,8 +9,8 @@ import UIKit
 import Anchorage
 
 class ExploreViewController: UIViewController {
-    let topView = UIView()
-    let pagerVC = PagerViewController()
+    private let topView = UIView()
+    private let pagerVC = PagerViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,7 @@ private extension ExploreViewController {
         topView.topAnchor == self.view.safeAreaLayoutGuide.topAnchor 
         topView.leadingAnchor == self.view.leadingAnchor
         topView.trailingAnchor == self.view.trailingAnchor
-        topView.bottomAnchor == self.view.bottomAnchor + 20
+        topView.bottomAnchor == self.view.safeAreaLayoutGuide.bottomAnchor
         
         pagerVC.view.frame = topView.bounds
         topView.addSubview(pagerVC.view)

@@ -2,7 +2,7 @@
 //  CategoryPresenter.swift
 //  AlineaInvest
 //
-//  Created by Silverlabs on 16/11/20.
+//  Created by Manish Kumar on 16/11/20.
 //
 
 import Foundation

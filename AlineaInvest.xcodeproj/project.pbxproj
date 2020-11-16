@@ -22,6 +22,10 @@
 		5619725C2562E5A600CD5EFE /* CategoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5619725B2562E5A600CD5EFE /* CategoryInteractor.swift */; };
 		5619725F2562E69900CD5EFE /* CategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5619725E2562E69900CD5EFE /* CategoryPresenter.swift */; };
 		561972622562EBB300CD5EFE /* PagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561972612562EBB300CD5EFE /* PagerViewController.swift */; };
+		561972652562F40B00CD5EFE /* ThemesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561972642562F40B00CD5EFE /* ThemesCollectionViewCell.swift */; };
+		561972682562F47B00CD5EFE /* ThemesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561972672562F47B00CD5EFE /* ThemesDataModel.swift */; };
+		5619726B2562F4DB00CD5EFE /* ThemesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5619726A2562F4DB00CD5EFE /* ThemesInteractor.swift */; };
+		5619726E2562F64200CD5EFE /* ThemesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5619726D2562F64200CD5EFE /* ThemesPresenter.swift */; };
 		9FFB6E1F1FFFBD143211570E /* Pods_AlineaInvest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E36FBD09B59558BCC400D52 /* Pods_AlineaInvest.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +48,10 @@
 		5619725B2562E5A600CD5EFE /* CategoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInteractor.swift; sourceTree = "<group>"; };
 		5619725E2562E69900CD5EFE /* CategoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresenter.swift; sourceTree = "<group>"; };
 		561972612562EBB300CD5EFE /* PagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerViewController.swift; sourceTree = "<group>"; };
+		561972642562F40B00CD5EFE /* ThemesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemesCollectionViewCell.swift; sourceTree = "<group>"; };
+		561972672562F47B00CD5EFE /* ThemesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesDataModel.swift; sourceTree = "<group>"; };
+		5619726A2562F4DB00CD5EFE /* ThemesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesInteractor.swift; sourceTree = "<group>"; };
+		5619726D2562F64200CD5EFE /* ThemesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesPresenter.swift; sourceTree = "<group>"; };
 		C691270DE134E2E6EFD5ADE3 /* Pods-AlineaInvest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlineaInvest.release.xcconfig"; path = "Target Support Files/Pods-AlineaInvest/Pods-AlineaInvest.release.xcconfig"; sourceTree = "<group>"; };
 		D0DF105C59E1BB5A24425F7E /* Pods-AlineaInvest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlineaInvest.debug.xcconfig"; path = "Target Support Files/Pods-AlineaInvest/Pods-AlineaInvest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -304,6 +312,7 @@
 		561972232562C2FD00CD5EFE /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				561972672562F47B00CD5EFE /* ThemesDataModel.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -311,6 +320,7 @@
 		561972242562C30100CD5EFE /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				5619726D2562F64200CD5EFE /* ThemesPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -318,6 +328,7 @@
 		561972252562C30400CD5EFE /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				5619726A2562F4DB00CD5EFE /* ThemesInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -326,6 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				5619724A2562CB3400CD5EFE /* ThemesViewController.swift */,
+				561972642562F40B00CD5EFE /* ThemesCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -495,12 +507,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				561972652562F40B00CD5EFE /* ThemesCollectionViewCell.swift in Sources */,
+				5619726E2562F64200CD5EFE /* ThemesPresenter.swift in Sources */,
 				561972622562EBB300CD5EFE /* PagerViewController.swift in Sources */,
+				5619726B2562F4DB00CD5EFE /* ThemesInteractor.swift in Sources */,
 				5619725C2562E5A600CD5EFE /* CategoryInteractor.swift in Sources */,
 				5619724E2562CB6200CD5EFE /* TrendingViewController.swift in Sources */,
 				561972482562CB1500CD5EFE /* CategoryViewController.swift in Sources */,
 				5619720A2562C16400CD5EFE /* TabBarViewController.swift in Sources */,
 				5619725F2562E69900CD5EFE /* CategoryPresenter.swift in Sources */,
+				561972682562F47B00CD5EFE /* ThemesDataModel.swift in Sources */,
 				561971F02562C06E00CD5EFE /* AppDelegate.swift in Sources */,
 				561972422562C76B00CD5EFE /* ExploreViewController.swift in Sources */,
 				561972552562E16300CD5EFE /* UIColorExtension.swift in Sources */,
