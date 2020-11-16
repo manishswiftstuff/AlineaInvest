@@ -3,27 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		561971F02562C06E00CD5EFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561971EF2562C06E00CD5EFE /* AppDelegate.swift */; };
-		561971F22562C06E00CD5EFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561971F12562C06E00CD5EFE /* SceneDelegate.swift */; };
-		561971F42562C06E00CD5EFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561971F32562C06E00CD5EFE /* ViewController.swift */; };
-		561971F72562C06E00CD5EFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 561971F52562C06E00CD5EFE /* Main.storyboard */; };
 		561971F92562C07100CD5EFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561971F82562C07100CD5EFE /* Assets.xcassets */; };
 		561971FC2562C07100CD5EFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 561971FA2562C07100CD5EFE /* LaunchScreen.storyboard */; };
+		5619720A2562C16400CD5EFE /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561972092562C16400CD5EFE /* TabBarViewController.swift */; };
+		561972422562C76B00CD5EFE /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561972412562C76B00CD5EFE /* ExploreViewController.swift */; };
+		561972452562C78000CD5EFE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561972442562C78000CD5EFE /* HomeViewController.swift */; };
+		9FFB6E1F1FFFBD143211570E /* Pods_AlineaInvest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E36FBD09B59558BCC400D52 /* Pods_AlineaInvest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E36FBD09B59558BCC400D52 /* Pods_AlineaInvest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlineaInvest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		561971EC2562C06E00CD5EFE /* AlineaInvest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlineaInvest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		561971EF2562C06E00CD5EFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		561971F12562C06E00CD5EFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		561971F32562C06E00CD5EFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		561971F62562C06E00CD5EFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		561971F82562C07100CD5EFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		561971FB2562C07100CD5EFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		561971FD2562C07100CD5EFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		561972092562C16400CD5EFE /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		561972412562C76B00CD5EFE /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		561972442562C78000CD5EFE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C691270DE134E2E6EFD5ADE3 /* Pods-AlineaInvest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlineaInvest.release.xcconfig"; path = "Target Support Files/Pods-AlineaInvest/Pods-AlineaInvest.release.xcconfig"; sourceTree = "<group>"; };
+		D0DF105C59E1BB5A24425F7E /* Pods-AlineaInvest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlineaInvest.debug.xcconfig"; path = "Target Support Files/Pods-AlineaInvest/Pods-AlineaInvest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FFB6E1F1FFFBD143211570E /* Pods_AlineaInvest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5241A5453F7FAF5D8FCC49D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0DF105C59E1BB5A24425F7E /* Pods-AlineaInvest.debug.xcconfig */,
+				C691270DE134E2E6EFD5ADE3 /* Pods-AlineaInvest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		561971E32562C06E00CD5EFE = {
 			isa = PBXGroup;
 			children = (
 				561971EE2562C06E00CD5EFE /* AlineaInvest */,
 				561971ED2562C06E00CD5EFE /* Products */,
+				5241A5453F7FAF5D8FCC49D3 /* Pods */,
+				872898BA51EFA966D8AC6754 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +72,279 @@
 		561971EE2562C06E00CD5EFE /* AlineaInvest */ = {
 			isa = PBXGroup;
 			children = (
+				5619720C2562C18400CD5EFE /* Modules */,
 				561971EF2562C06E00CD5EFE /* AppDelegate.swift */,
-				561971F12562C06E00CD5EFE /* SceneDelegate.swift */,
-				561971F32562C06E00CD5EFE /* ViewController.swift */,
-				561971F52562C06E00CD5EFE /* Main.storyboard */,
 				561971F82562C07100CD5EFE /* Assets.xcassets */,
 				561971FA2562C07100CD5EFE /* LaunchScreen.storyboard */,
 				561971FD2562C07100CD5EFE /* Info.plist */,
 			);
 			path = AlineaInvest;
+			sourceTree = "<group>";
+		};
+		561972052562C11C00CD5EFE /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				561972092562C16400CD5EFE /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		5619720C2562C18400CD5EFE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5619721C2562C2BA00CD5EFE /* Trending */,
+				5619721B2562C2AB00CD5EFE /* Themes */,
+				5619721A2562C27F00CD5EFE /* Category */,
+				5619720F2562C1BE00CD5EFE /* Explore */,
+				5619720E2562C1AF00CD5EFE /* Home */,
+				561972052562C11C00CD5EFE /* TabBar */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5619720E2562C1AF00CD5EFE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				561972142562C20500CD5EFE /* View */,
+				561972132562C1F800CD5EFE /* Interactor */,
+				561972122562C1E900CD5EFE /* Presenter */,
+				561972112562C1DD00CD5EFE /* Entity */,
+				561972102562C1CC00CD5EFE /* Router */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5619720F2562C1BE00CD5EFE /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				561972192562C23800CD5EFE /* View */,
+				561972182562C23300CD5EFE /* Interactor */,
+				561972172562C22E00CD5EFE /* Presenter */,
+				561972162562C22B00CD5EFE /* Entity */,
+				561972152562C22700CD5EFE /* Router */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		561972102562C1CC00CD5EFE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		561972112562C1DD00CD5EFE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		561972122562C1E900CD5EFE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		561972132562C1F800CD5EFE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		561972142562C20500CD5EFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				561972442562C78000CD5EFE /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		561972152562C22700CD5EFE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		561972162562C22B00CD5EFE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		561972172562C22E00CD5EFE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		561972182562C23300CD5EFE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		561972192562C23800CD5EFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				561972412562C76B00CD5EFE /* ExploreViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5619721A2562C27F00CD5EFE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				561972212562C2D200CD5EFE /* View */,
+				561972202562C2CF00CD5EFE /* Interactor */,
+				5619721F2562C2CC00CD5EFE /* Presenter */,
+				5619721E2562C2C800CD5EFE /* Entity */,
+				5619721D2562C2C500CD5EFE /* Router */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		5619721B2562C2AB00CD5EFE /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				561972262562C30800CD5EFE /* View */,
+				561972252562C30400CD5EFE /* Interactor */,
+				561972242562C30100CD5EFE /* Presenter */,
+				561972232562C2FD00CD5EFE /* Entity */,
+				561972222562C2FA00CD5EFE /* Router */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		5619721C2562C2BA00CD5EFE /* Trending */ = {
+			isa = PBXGroup;
+			children = (
+				5619722B2562C34800CD5EFE /* View */,
+				5619722A2562C34500CD5EFE /* Interactor */,
+				561972292562C34200CD5EFE /* Presenter */,
+				561972282562C33E00CD5EFE /* Entity */,
+				561972272562C33A00CD5EFE /* Router */,
+			);
+			path = Trending;
+			sourceTree = "<group>";
+		};
+		5619721D2562C2C500CD5EFE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5619721E2562C2C800CD5EFE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		5619721F2562C2CC00CD5EFE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		561972202562C2CF00CD5EFE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		561972212562C2D200CD5EFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		561972222562C2FA00CD5EFE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		561972232562C2FD00CD5EFE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		561972242562C30100CD5EFE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		561972252562C30400CD5EFE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		561972262562C30800CD5EFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		561972272562C33A00CD5EFE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		561972282562C33E00CD5EFE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		561972292562C34200CD5EFE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5619722A2562C34500CD5EFE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5619722B2562C34800CD5EFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		872898BA51EFA966D8AC6754 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E36FBD09B59558BCC400D52 /* Pods_AlineaInvest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +354,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 561972002562C07100CD5EFE /* Build configuration list for PBXNativeTarget "AlineaInvest" */;
 			buildPhases = (
+				ACAC9B1FC85E118E8CEF2DE2 /* [CP] Check Pods Manifest.lock */,
 				561971E82562C06E00CD5EFE /* Sources */,
 				561971E92562C06E00CD5EFE /* Frameworks */,
 				561971EA2562C06E00CD5EFE /* Resources */,
+				F77B618A0E10ED8DA90A4ABB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,34 +408,68 @@
 			files = (
 				561971FC2562C07100CD5EFE /* LaunchScreen.storyboard in Resources */,
 				561971F92562C07100CD5EFE /* Assets.xcassets in Resources */,
-				561971F72562C06E00CD5EFE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ACAC9B1FC85E118E8CEF2DE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlineaInvest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F77B618A0E10ED8DA90A4ABB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlineaInvest/Pods-AlineaInvest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlineaInvest/Pods-AlineaInvest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlineaInvest/Pods-AlineaInvest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		561971E82562C06E00CD5EFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				561971F42562C06E00CD5EFE /* ViewController.swift in Sources */,
+				5619720A2562C16400CD5EFE /* TabBarViewController.swift in Sources */,
 				561971F02562C06E00CD5EFE /* AppDelegate.swift in Sources */,
-				561971F22562C06E00CD5EFE /* SceneDelegate.swift in Sources */,
+				561972422562C76B00CD5EFE /* ExploreViewController.swift in Sources */,
+				561972452562C78000CD5EFE /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		561971F52562C06E00CD5EFE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				561971F62562C06E00CD5EFE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		561971FA2562C07100CD5EFE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,12 +599,14 @@
 		};
 		561972012562C07100CD5EFE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0DF105C59E1BB5A24425F7E /* Pods-AlineaInvest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GD6GHR2Q2F;
 				INFOPLIST_FILE = AlineaInvest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +614,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.manish.AlineaInvest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		561972022562C07100CD5EFE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C691270DE134E2E6EFD5ADE3 /* Pods-AlineaInvest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GD6GHR2Q2F;
 				INFOPLIST_FILE = AlineaInvest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +635,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.manish.AlineaInvest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

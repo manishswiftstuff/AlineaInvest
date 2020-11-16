@@ -1,0 +1,59 @@
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## Build generated
+build/
+DerivedData
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.xcuserstate
+*.dSYM.zip
+*.dSYM
+.DS_Store
+.idea/
+
+## Natrium generated
+/SLFlops/SLFlops/app-setting/Firebase/GoogleService-Info.plist
+/SLFlops/SLFlops/Info.plist
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+
+# CocoaPods
+
+Pods/
+/SLFlops/Podfile.lock
+/SLFlops/SLFlops.xcworkspace/xcshareddata/xcschemes/SLFlops.xcscheme
+
+IDEWorkspaceChecks.plist
+/SLFlops/SLFlops/app-icons/Assets.xcassets/AppIcon.appiconset/Contents.json
+/SLFlops/SLFlops/app-icons/Assets.xcassets/AppIcon.appiconset/60@x3.png
+/SLFlops/SLFlops/app-icons/Assets.xcassets/AppIcon.appiconset/60@x2.png
+/SLFlops/SLFlops/app-icons/Assets.xcassets/AppIcon.appiconset/40@x3.png
+/SLFlops/SLFlops/app-icons/Assets.xcassets/AppIcon.appiconset/40@x2.png
+/SLFlops/SLFlops/app-icons/Assets.xcassets/AppIcon.appiconset/29@x3.png
+/SLFlops/SLFlops/app-icons/Assets.xcassets/AppIcon.appiconset/29@x2.png
+/SLFlops/SLFlops/app-icons/Assets.xcassets/AppIcon.appiconset/20@x3.png
+/SLFlops/SLFlops/app-icons/Assets.xcassets/AppIcon.appiconset/20@x2.png
+/SLFlops/SLFlops/app-icons/Assets.xcassets/AppIcon.appiconset/1024.png
