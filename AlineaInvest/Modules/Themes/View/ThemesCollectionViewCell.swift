@@ -29,17 +29,17 @@ class ThemesCollectionViewCell: UICollectionViewCell {
         
         self.addSubview(themeImageView)
         themeImageView.centerXAnchor == self.centerXAnchor
-        themeImageView.topAnchor == self.topAnchor + 10
+        themeImageView.topAnchor == self.topAnchor + Margin.small
         themeImageView.widthAnchor == self.widthAnchor * 0.6
         themeImageView.heightAnchor == self.heightAnchor * 0.6
         
         self.addSubview(themeTitleLabel)
-        themeTitleLabel.topAnchor == themeImageView.bottomAnchor + 10
-        themeTitleLabel.leadingAnchor == self.leadingAnchor + 20
-        themeTitleLabel.trailingAnchor == self.trailingAnchor - 20
-        themeTitleLabel.bottomAnchor == self.bottomAnchor - 10
+        themeTitleLabel.topAnchor == themeImageView.bottomAnchor + Margin.small
+        themeTitleLabel.leadingAnchor == self.leadingAnchor + Margin.medium
+        themeTitleLabel.trailingAnchor == self.trailingAnchor - Margin.medium
+        themeTitleLabel.bottomAnchor == self.bottomAnchor - Margin.small
         themeTitleLabel.textAlignment = .center
-        themeTitleLabel.font = UIFont.systemFont(ofSize: 14)
+        themeTitleLabel.font = Font.font14
         themeTitleLabel.textColor = .black
     }
     

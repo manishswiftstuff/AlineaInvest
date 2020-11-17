@@ -22,32 +22,32 @@ class TrendingTableViewCell: UITableViewCell {
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
-        selectionStyle = .none
     }
     
     private func configureView() {
+        selectionStyle = .none
         self.addSubview(trendingImageView)
         trendingImageView.centerYAnchor == self.centerYAnchor
-        trendingImageView.leadingAnchor == self.leadingAnchor + 40
+        trendingImageView.leadingAnchor == self.leadingAnchor + Margin.large
         trendingImageView.sizeAnchors == CGSize(width: 50, height: 50)
         
         self.addSubview(trendingTitleLabel)
         trendingTitleLabel.topAnchor == trendingImageView.topAnchor
-        trendingTitleLabel.leadingAnchor == trendingImageView.trailingAnchor + 15
-        trendingTitleLabel.trailingAnchor == self.trailingAnchor - 20
-        trendingTitleLabel.font = UIFont.systemFont(ofSize: 14)
+        trendingTitleLabel.leadingAnchor == trendingImageView.trailingAnchor + Margin.small
+        trendingTitleLabel.trailingAnchor == self.trailingAnchor - Margin.medium
+        trendingTitleLabel.font = Font.font14
         trendingTitleLabel.textColor = .black
         
         self.addSubview(trendingSubTextLabel)
-        trendingSubTextLabel.topAnchor == trendingTitleLabel.bottomAnchor + 10
-        trendingSubTextLabel.leadingAnchor == trendingImageView.trailingAnchor + 15
-        trendingSubTextLabel.trailingAnchor == self.trailingAnchor - 20
-        trendingSubTextLabel.font = UIFont.systemFont(ofSize: 14)
+        trendingSubTextLabel.topAnchor == trendingTitleLabel.bottomAnchor + Margin.small
+        trendingSubTextLabel.leadingAnchor == trendingImageView.trailingAnchor + Margin.small
+        trendingSubTextLabel.trailingAnchor == self.trailingAnchor - Margin.medium
+        trendingSubTextLabel.font = Font.font14
         trendingSubTextLabel.textColor = .gray
         
         self.addSubview(trendingValueView)
         trendingValueView.centerYAnchor == self.centerYAnchor
-        trendingValueView.trailingAnchor == self.trailingAnchor - 20
+        trendingValueView.trailingAnchor == self.trailingAnchor - Margin.medium
         trendingValueView.heightAnchor == 24
         trendingValueView.backgroundColor = .green
         trendingValueView.layer.cornerRadius = 12
@@ -55,16 +55,16 @@ class TrendingTableViewCell: UITableViewCell {
         
         trendingValueView.addSubview(trendingValueLabel)
         trendingValueLabel.centerYAnchor == trendingValueView.centerYAnchor
-        trendingValueLabel.trailingAnchor == trendingValueView.trailingAnchor - 20
-        trendingValueLabel.leadingAnchor == trendingValueView.leadingAnchor + 20
-        trendingValueLabel.font = UIFont.systemFont(ofSize: 14)
+        trendingValueLabel.trailingAnchor == trendingValueView.trailingAnchor - Margin.medium
+        trendingValueLabel.leadingAnchor == trendingValueView.leadingAnchor + Margin.medium
+        trendingValueLabel.font = Font.font14
         trendingValueLabel.textColor = .white
                 
         let separator = UIView()
         self.addSubview(separator)
         separator.bottomAnchor == self.bottomAnchor
-        separator.leadingAnchor == self.leadingAnchor + 20
-        separator.trailingAnchor == self.trailingAnchor - 20
+        separator.leadingAnchor == self.leadingAnchor + Margin.medium
+        separator.trailingAnchor == self.trailingAnchor - Margin.medium
         separator.heightAnchor == 1
         separator.backgroundColor = UIColor.borderColor
     }

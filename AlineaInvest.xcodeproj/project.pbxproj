@@ -30,6 +30,7 @@
 		561972742562F89A00CD5EFE /* TrendingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561972732562F89A00CD5EFE /* TrendingDataModel.swift */; };
 		561972772562F93F00CD5EFE /* TrendingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561972762562F93F00CD5EFE /* TrendingInteractor.swift */; };
 		5619727B2562FC3E00CD5EFE /* TrendingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5619727A2562FC3E00CD5EFE /* TrendingPresenter.swift */; };
+		5619727E25637C3E00CD5EFE /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5619727D25637C3E00CD5EFE /* Common.swift */; };
 		9FFB6E1F1FFFBD143211570E /* Pods_AlineaInvest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E36FBD09B59558BCC400D52 /* Pods_AlineaInvest.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		561972732562F89A00CD5EFE /* TrendingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingDataModel.swift; sourceTree = "<group>"; };
 		561972762562F93F00CD5EFE /* TrendingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingInteractor.swift; sourceTree = "<group>"; };
 		5619727A2562FC3E00CD5EFE /* TrendingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingPresenter.swift; sourceTree = "<group>"; };
+		5619727D25637C3E00CD5EFE /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		C691270DE134E2E6EFD5ADE3 /* Pods-AlineaInvest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlineaInvest.release.xcconfig"; path = "Target Support Files/Pods-AlineaInvest/Pods-AlineaInvest.release.xcconfig"; sourceTree = "<group>"; };
 		D0DF105C59E1BB5A24425F7E /* Pods-AlineaInvest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlineaInvest.debug.xcconfig"; path = "Target Support Files/Pods-AlineaInvest/Pods-AlineaInvest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -394,6 +396,7 @@
 			isa = PBXGroup;
 			children = (
 				561972542562E16300CD5EFE /* UIColorExtension.swift */,
+				5619727D25637C3E00CD5EFE /* Common.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -523,6 +526,7 @@
 				5619726E2562F64200CD5EFE /* ThemesPresenter.swift in Sources */,
 				561972712562F86000CD5EFE /* TrendingTableViewCell.swift in Sources */,
 				561972622562EBB300CD5EFE /* PagerViewController.swift in Sources */,
+				5619727E25637C3E00CD5EFE /* Common.swift in Sources */,
 				5619726B2562F4DB00CD5EFE /* ThemesInteractor.swift in Sources */,
 				561972772562F93F00CD5EFE /* TrendingInteractor.swift in Sources */,
 				5619725C2562E5A600CD5EFE /* CategoryInteractor.swift in Sources */,

@@ -20,13 +20,14 @@ class CategoryTableViewCell: UITableViewCell {
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
-        selectionStyle = .none
+        
     }
     
     private func configureView() {
+        selectionStyle = .none
         self.addSubview(topView)
-        topView.leadingAnchor == self.leadingAnchor + 25
-        topView.trailingAnchor == self.trailingAnchor - 25
+        topView.leadingAnchor == self.leadingAnchor + Margin.medium
+        topView.trailingAnchor == self.trailingAnchor - Margin.medium
         topView.centerYAnchor == self.centerYAnchor
         topView.heightAnchor == 80
         topView.backgroundColor = UIColor.colorPallet.randomElement()
@@ -34,7 +35,7 @@ class CategoryTableViewCell: UITableViewCell {
         
         topView.addSubview(categoryImageView)
         categoryImageView.centerYAnchor == topView.centerYAnchor
-        categoryImageView.leadingAnchor == topView.leadingAnchor + 30
+        categoryImageView.leadingAnchor == topView.leadingAnchor + Margin.large
         categoryImageView.sizeAnchors == CGSize(width: 50, height: 50)
         categoryImageView.contentMode = .center
         categoryImageView.tintColor = .white
@@ -46,15 +47,16 @@ class CategoryTableViewCell: UITableViewCell {
         
         topView.addSubview(categoryTitleLabel)
         categoryTitleLabel.centerYAnchor == topView.centerYAnchor
-        categoryTitleLabel.leadingAnchor == categoryImageView.trailingAnchor + 30
-        categoryTitleLabel.trailingAnchor == topView.trailingAnchor - 20
+        categoryTitleLabel.leadingAnchor == categoryImageView.trailingAnchor + Margin.large
+        categoryTitleLabel.trailingAnchor == topView.trailingAnchor - Margin.medium
         categoryTitleLabel.textColor = .white
+        categoryTitleLabel.font = Font.font14
                 
         let separator = UIView()
         self.addSubview(separator)
         separator.bottomAnchor == self.bottomAnchor
-        separator.leadingAnchor == self.leadingAnchor + 20
-        separator.trailingAnchor == self.trailingAnchor - 20
+        separator.leadingAnchor == self.leadingAnchor + Margin.medium
+        separator.trailingAnchor == self.trailingAnchor - Margin.medium
         separator.heightAnchor == 1
         separator.backgroundColor = UIColor.borderColor
     }
