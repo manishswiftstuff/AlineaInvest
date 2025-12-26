@@ -19,6 +19,7 @@ var window: UIWindow?
         navigationController.navigationBar.isHidden = true
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
+        //testing git push
         return true
     }
     
